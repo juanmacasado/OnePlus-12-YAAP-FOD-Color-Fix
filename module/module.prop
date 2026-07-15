@@ -1,0 +1,7 @@
+id=op12_fod_color_fix
+name=OP12 FOD Color Fix
+version=v1.0.1
+versionCode=11
+author=Juanma Casado
+description=Applies the OnePlus display loading-effect state required to preserve display colors after fingerprint unlock.
+updateJson=https://raw.githubusercontent.com/juanmacasado/OP12-FOD-Color-Fix/main/update.json
