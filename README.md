@@ -1,7 +1,7 @@
-# OP12 FOD Color Fix
+# OnePlus 12 YAAP FOD Color Fix
 
-[![CI](https://github.com/juanmacasado/OP12-FOD-Color-Fix/actions/workflows/ci.yml/badge.svg)](https://github.com/juanmacasado/OP12-FOD-Color-Fix/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/juanmacasado/OP12-FOD-Color-Fix)](https://github.com/juanmacasado/OP12-FOD-Color-Fix/releases/latest)
+[![CI](https://github.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix/actions/workflows/ci.yml/badge.svg)](https://github.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix)](https://github.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A minimal, zero-daemon KernelSU/Magisk module that fixes the display color
@@ -69,8 +69,6 @@ unlocks.
 ### What it deliberately does *not* do
 
 - No overlay payload over `/system`, `/vendor`, or `/odm`
-- No OverlayFS or Hybrid Mount dependency
-- No SELinux policy or state change (SELinux stays Enforcing)
 - No DTBO or kernel-module (`msm_drm.ko`) replacement
 - No SurfaceFlinger or composer restart
 - No event monitor, polling loop, or persistent daemon
@@ -89,14 +87,14 @@ It coexists cleanly with a separate Native/Wide-AMOLED display-mode module.
 ## Installation
 
 Download the ZIP from the
-[latest release](https://github.com/juanmacasado/OP12-FOD-Color-Fix/releases/latest)
+[latest release](https://github.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix/releases/latest)
 and install it from your root manager, then reboot.
 
 From a terminal with KernelSU/SukiSU:
 
 ```sh
-adb push OP12-FOD-Color-Fix-v1.0.1.zip /sdcard/Download/
-adb shell su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.1.zip'
+adb push OP12-FOD-Color-Fix-v1.0.2.zip /sdcard/Download/
+adb shell su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.2.zip'
 adb reboot
 ```
 

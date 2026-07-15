@@ -1,4 +1,4 @@
-# OP12 FOD Color Fix
+# OnePlus 12 YAAP FOD Color Fix
 
 A minimal KernelSU/Magisk-compatible module for the OnePlus 12 display stack.
 
@@ -19,9 +19,7 @@ seconds, writes the value once, and exits.
 
 - One one-shot sysfs write after boot
 - No persistent process or polling loop
-- No OverlayFS or Hybrid Mount dependency
 - No files mounted over `/system`, `/vendor`, or `/odm`
-- No SELinux policy
 - No DTBO or kernel-module replacement
 - No SurfaceFlinger or composer restart
 - Compatible with a separate Native display-mode module
@@ -40,7 +38,7 @@ Install the ZIP through the root manager and reboot.
 Terminal installation with KernelSU/SukiSU:
 
 ```sh
-su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.1.zip'
+su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.2.zip'
 su -c reboot
 ```
 
@@ -66,4 +64,4 @@ does not force Native/Wide AMOLED gamut and does not replace `iris_configs.xml`.
 
 ## Source
 
-<https://github.com/juanmacasado/OP12-FOD-Color-Fix>
+<https://github.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix>

@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.2 — 2026-07-15
+
+- Renamed the project to **OnePlus 12 YAAP FOD Color Fix** and moved the
+  repository to `OnePlus-12-YAAP-FOD-Color-Fix`; update URLs adjusted
+  accordingly. The internal module `id` is unchanged, so existing installs
+  update in place.
+- Trimmed the README design list to the points that matter to users.
+- No functional changes to the fix itself.
+
 ## v1.0.1 — 2026-07-15
 
 - First public GitHub release.
