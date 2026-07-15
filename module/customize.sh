@@ -5,7 +5,7 @@ SKIPUNZIP=0
 SEED_NODE="/sys/kernel/oplus_display/seed"
 
 ui_print "***************************************"
-ui_print " OnePlus 12 YAAP FOD Color Fix v1.0.2"
+ui_print " OnePlus 12 YAAP FOD Color Fix v1.0.3"
 ui_print "***************************************"
 ui_print "- Checking the required kernel interface"
 

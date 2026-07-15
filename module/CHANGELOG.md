@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.3 — 2026-07-15
+
+- Made the build byte-for-byte reproducible across machines: the flashable ZIP
+  is now stored uncompressed, removing a dependency on the host zlib version
+  that made the CI-built and locally built archives differ.
+- No functional changes to the fix itself.
+
 ## v1.0.2 — 2026-07-15
 
 - Renamed the project to **OnePlus 12 YAAP FOD Color Fix** and moved the

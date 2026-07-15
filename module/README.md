@@ -38,7 +38,7 @@ Install the ZIP through the root manager and reboot.
 Terminal installation with KernelSU/SukiSU:
 
 ```sh
-su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.2.zip'
+su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.3.zip'
 su -c reboot
 ```
 

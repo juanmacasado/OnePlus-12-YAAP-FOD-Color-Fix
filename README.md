@@ -93,8 +93,8 @@ and install it from your root manager, then reboot.
 From a terminal with KernelSU/SukiSU:
 
 ```sh
-adb push OP12-FOD-Color-Fix-v1.0.2.zip /sdcard/Download/
-adb shell su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.2.zip'
+adb push OP12-FOD-Color-Fix-v1.0.3.zip /sdcard/Download/
+adb shell su -c 'ksud module install /sdcard/Download/OP12-FOD-Color-Fix-v1.0.3.zip'
 adb reboot
 ```
 
@@ -128,8 +128,10 @@ python3 scripts/build.py    # deterministic ZIP in dist/
 sh scripts/verify.sh        # static checks + build + ZIP integrity
 ```
 
-The build is reproducible: the same source tree always produces the same
-bytes, and a `.sha256` file is emitted next to the ZIP.
+The build is byte-for-byte reproducible on any machine: the archive stores
+files uncompressed with a fixed timestamp and fixed permissions, so it carries
+no dependency on the host zlib version. A `.sha256` file is emitted next to the
+ZIP, and CI rebuilds it to confirm the released artifact matches.
 
 ## Compatibility and limitations
 

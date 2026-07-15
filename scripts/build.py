@@ -44,16 +44,18 @@ def main() -> None:
     if out.exists():
         out.unlink()
 
-    with zipfile.ZipFile(
-        out, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
-    ) as zf:
+    # Stored (uncompressed) on purpose: the DEFLATE byte stream depends on the
+    # host zlib version, so compression would make the ZIP differ between
+    # machines. Storing files verbatim keeps the build byte-for-byte
+    # reproducible anywhere. The module is a few KB, so size is irrelevant.
+    with zipfile.ZipFile(out, "w", compression=zipfile.ZIP_STORED) as zf:
         for rel in FILES:
             data = (MODULE / rel).read_bytes()
             info = zipfile.ZipInfo(rel, date_time=FIXED_TIME)
             info.create_system = 3
             mode = 0o755 if rel.endswith(".sh") else 0o644
             info.external_attr = (mode & 0xFFFF) << 16
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.compress_type = zipfile.ZIP_STORED
             zf.writestr(info, data)
 
     digest = hashlib.sha256(out.read_bytes()).hexdigest()

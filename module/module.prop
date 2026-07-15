@@ -1,7 +1,7 @@
 id=op12_fod_color_fix
 name=OnePlus 12 YAAP FOD Color Fix
-version=v1.0.2
-versionCode=12
+version=v1.0.3
+versionCode=13
 author=Juanma Casado
 description=Applies the OnePlus display loading-effect state required to preserve display colors after fingerprint unlock.
 updateJson=https://raw.githubusercontent.com/juanmacasado/OnePlus-12-YAAP-FOD-Color-Fix/main/update.json
