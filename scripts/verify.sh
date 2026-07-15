@@ -3,7 +3,7 @@
 # no forbidden runtime behavior, and the ZIP builds and tests clean.
 set -eu
 
-ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+ROOT=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 MODULE="$ROOT/module"
 
 required="module.prop customize.sh service.sh skip_mount README.md CHANGELOG.md LICENSE"
